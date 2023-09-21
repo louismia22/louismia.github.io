@@ -35,6 +35,30 @@ export const LanguageCard = () => {
           <DynamicText textId="languages-2-info" />
         </Typography>
       </Box>
+      <Box sx={sxLanguageCardItemContainer}>
+      <Typography sx={sxLanguageCardItemTitle}>
+        <DynamicText textId="languages-3-title" />
+      </Typography>
+      <Typography sx={sxLanguageCardItemSubtitle}>
+        <DynamicText textId="languages-3-info" />
+      </Typography>
+      </Box>
+      <Box sx={sxLanguageCardItemContainer}>
+      <Typography sx={sxLanguageCardItemTitle}>
+        <DynamicText textId="languages-4-title" />
+      </Typography>
+      <Typography sx={sxLanguageCardItemSubtitle}>
+        <DynamicText textId="languages-4-info" />
+      </Typography>
+      </Box>
+      <Box sx={sxLanguageCardItemContainer}>
+      <Typography sx={sxLanguageCardItemTitle}>
+        <DynamicText textId="languages-5-title" />
+      </Typography>
+      <Typography sx={sxLanguageCardItemSubtitle}>
+        <DynamicText textId="languages-5-info" />
+      </Typography>
+      </Box>
     </Box>
   );
 };

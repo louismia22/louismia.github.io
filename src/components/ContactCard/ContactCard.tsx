@@ -48,20 +48,19 @@ export const ContactCard = (props: ContactCardProps) => {
           <img
             alt="image"
             style={{
-              width: '115%',
-              marginTop: '-10px',
+              width: '110%',
               userSelect: 'none',
               objectFit: 'cover',
             }}
             height="300"
             width="230"
-            src="/images/pp.webp"
+            src="/images/pp.jpeg"
           />
         </Box>
         {isMedium && (
           <Box sx={sxContactCardPictureTextContainer}>
             <Typography component="h1" sx={sxContactCardTitle}>
-              AMAURY CHALOT
+              Louis-Marie LOVICHI
             </Typography>
             <Typography component="h2" sx={sxContactCardSubtitle}>
               Software Engineer
@@ -73,7 +72,7 @@ export const ContactCard = (props: ContactCardProps) => {
         {!isMedium && (
           <React.Fragment>
             <Typography component="h1" sx={sxContactCardTitle}>
-              AMAURY CHALOT
+              Louis-Marie LOVICHI
             </Typography>
             <Typography component="h2" sx={sxContactCardSubtitle}>
               Software Engineer

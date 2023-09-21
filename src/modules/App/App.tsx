@@ -27,6 +27,7 @@ import {
   sxPageContainer,
   sxPageContainerLarge,
 } from './App.styles';
+import { InterestCard } from '../../components/InterestCard/InterestCard';
 
 function App() {
   const { isSmall, isMedium, isLarge } = useThemeMediaQuery();
@@ -41,6 +42,7 @@ function App() {
   const { ref: contactRef, refIsVisible: contactIsVisible } = useVisibility();
   const { ref: infoRef, refIsVisible: infoIsVisible } = useVisibility();
   const { ref: languageRef, refIsVisible: languageIsVisible } = useVisibility();
+  const { ref: interestRef, refIsVisible: interestIsVisible } = useVisibility();
 
   useEffect(() => {
     containerRef.current?.focus();
@@ -258,7 +260,7 @@ function App() {
               >
                 <LinkCard />
               </section>
-              <section
+              {/*<section
                 ref={infoRef}
                 style={{
                   transition: 'opacity 0.3s ease-in-out 0.2s',
@@ -266,8 +268,9 @@ function App() {
                 }}
               >
                 <InfoCard />
-              </section>
-              <section
+              </section>*/}
+
+              {/*<section
                 ref={skillRef}
                 style={{
                   transition: 'opacity 0.3s ease-in-out 0.2s',
@@ -275,7 +278,8 @@ function App() {
                 }}
               >
                 <SkillCard skills={skills} id={'skills'} />
-              </section>
+              </section>*/}
+
               <section
                 ref={languageRef}
                 style={{
@@ -285,6 +289,18 @@ function App() {
               >
                 <LanguageCard />
               </section>
+
+              <section
+                ref={interestRef}
+                style={{
+                  transition: 'opacity 0.3s ease-in-out 0.2s',
+                  opacity: interestIsVisible ? 1 : 0,
+                }}
+              >
+                <InterestCard />
+              </section>
+
+
             </Box>
           </Box>
         </Box>

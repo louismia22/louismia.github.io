@@ -6,6 +6,7 @@
   "projects": "Projects",
   "education": "Education",
   "languages": "Languages",
+  "interests": "Interests & Hobbies",
   "download-cv-text": "Download My CV",
   "about-me-content": "As an enthusiastic and passionate Software Engineer, I have acquired strong technical skills and am able to communicate effectively and adapt while working in a team. I am constantly seeking new challenges along with innovative and ambitious projects to continue developing my skills and contribute to the success of the company.",
   "education-1-title": "Engineering Master's Degree in Computer Science",
@@ -45,10 +46,29 @@
   "skill-5-content-2": "Terraform",
   "skill-5-content-3": "Figma, Adobe XD, Blender",
   "skill-5-content-4": "Adobe Suite: Illustrator, Photoshop, Premiere Pro, After Effects",
+
+
   "languages-1-title": "French",
   "languages-1-info": "Native",
   "languages-2-title": "English",
   "languages-2-info": "Fluent",
+  "languages-3-title": "German",
+  "languages-3-info": "Fluent",
+  "languages-4-title": "Luxembourgish",
+  "languages-4-info": "Advanced",
+  "languages-5-title": "Russian",
+  "languages-5-info": "Intermediate",
+
+
+  "interests-1-title": "Volunteering",
+  "interests-1-info": "I served as a young volunteer fireman from 2012 to 2017.",
+  "interests-2-title": "Track and field",
+  "interests-2-info": "1500m : 4'18\" – 3000m: 9'24\" – 10km: 34'47\" – Marathon: 2h55.",
+  "interests-3-title": "Skydiving",
+  "interests-3-info": "Former president of skydiving activities at X – 365 jumps since 2014.",
+  "interests-4-title": "Music",
+  "interests-4-info": "I played the trumpet for 9 years in orchestras and in a musical.",
+
   "experience-1-title": "Full Stack Software Engineer",
   "experience-1-subTitle": "Next Gate Tech, September 2022 - April 2023",
   "experience-1-info": "Luxembourg City, Luxembourg",

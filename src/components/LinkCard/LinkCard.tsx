@@ -35,39 +35,39 @@ export const LinkCard = () => {
       </Typography>
       <Box sx={sxLinkCardItemContainer}>
         <PhoneIcon color="primary" />
-        <Link sx={sxLinkCardItemTypography} href="tel:+33652064425">
-          +33 6 52 06 44 25
+        <Link sx={sxLinkCardItemTypography} href="tel:+33780037117">
+          +33 7 80 03 71 17
         </Link>
       </Box>
       <Box sx={sxLinkCardItemContainer}>
         <EmailIcon color="primary" />
         <Link
           sx={sxLinkCardItemTypography}
-          href="mailto:amaurychalot@gmail.com"
+          href="mailto:lm.lovichi@me.com"
         >
-          amaurychalot@gmail.com
+          lm.lovichi@me.com
         </Link>
       </Box>
       <Box sx={sxLinkCardItemContainer}>
         <LinkedInIcon color="primary" />
         <Link
           sx={sxLinkCardItemTypography}
-          href="https://www.linkedin.com/in/amaury-chalot-6519b319b/"
+          href="https://www.linkedin.com/in/louis-marie-lovichi/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          linkedin.com/in/amaury-chalot-6519b319b
+          linkedin.com/in/louis-marie-lovichi
         </Link>
       </Box>
       <Box sx={sxLinkCardItemContainer}>
         <GitHubIcon color="primary" />
         <Link
           sx={sxLinkCardItemTypography}
-          href="https://github.com/AmauryChalot"
+          href="https://github.com/louismia22"
           target="_blank"
           rel="noopener noreferrer"
         >
-          github.com/AmauryChalot
+          github.com/louismia22
         </Link>
       </Box>
       <Box sx={sxLinkCardItemContainer}>
