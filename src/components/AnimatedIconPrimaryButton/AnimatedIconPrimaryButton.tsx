@@ -1,7 +1,7 @@
 import { Box, Button, Typography } from '@mui/material';
 import React from 'react';
-import EnglishPDF from '../../assets/documents/Louis-Marie-Lovichi-CV-EN.pdf';
-import FrenchPDF from '../../assets/documents/Amaury-Chalot-CV-FR.pdf';
+import EnglishPDF from '../../assets/documents/Louis-Marie-Lovichi-CV.pdf';
+import FrenchPDF from '../../assets/documents/Louis-Marie-Lovichi-CV.pdf';
 import { LanguageContext } from '../../context';
 import { DynamicText } from '../DynamicText/DynamicText';
 import { AnimatedIconPrimaryButtonProps } from './AnimatedIconPrimaryButton.models';

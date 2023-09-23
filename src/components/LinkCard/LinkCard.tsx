@@ -72,8 +72,8 @@ export const LinkCard = () => {
       </Box>
       <Box sx={sxLinkCardItemContainer}>
         <LanguageOutlinedIcon color="primary" />
-        <Link sx={sxLinkCardItemTypography} href="https://amaurychalot.dev">
-          amaurychalot.dev
+        <Link sx={sxLinkCardItemTypography} href="https://louismia22.github.io/">
+        louismia22.github.io
         </Link>
       </Box>
       <Box sx={sxLinkCardItemContainer}>

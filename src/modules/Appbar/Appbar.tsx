@@ -42,6 +42,10 @@ export const Appbar = (props: AppbarProps) => {
       value: '#aboutme',
     },
     {
+      id: 'education',
+      value: '#education',
+    },
+    {
       id: 'experiences',
       value: '#experiences',
     },

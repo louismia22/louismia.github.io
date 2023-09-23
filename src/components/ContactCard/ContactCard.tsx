@@ -62,9 +62,9 @@ export const ContactCard = (props: ContactCardProps) => {
             <Typography component="h1" sx={sxContactCardTitle}>
               Louis-Marie LOVICHI
             </Typography>
-            <Typography component="h2" sx={sxContactCardSubtitle}>
+            {/*<Typography component="h2" sx={sxContactCardSubtitle}>
               Software Engineer
-            </Typography>
+            </Typography>*/}
           </Box>
         )}
       </Box>
@@ -74,14 +74,14 @@ export const ContactCard = (props: ContactCardProps) => {
             <Typography component="h1" sx={sxContactCardTitle}>
               Louis-Marie LOVICHI
             </Typography>
-            <Typography component="h2" sx={sxContactCardSubtitle}>
+            {/*<Typography component="h2" sx={sxContactCardSubtitle}>
               Software Engineer
-            </Typography>
+            </Typography>*/}
           </React.Fragment>
         )}
-        <Typography sx={sxContactCardBody}>
+        {/*<Typography sx={sxContactCardBody}>
           <DynamicText textId="about-me-content" />
-        </Typography>
+          </Typography>*/}
       </Box>
     </Box>
   );

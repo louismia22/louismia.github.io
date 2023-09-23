@@ -71,7 +71,7 @@ export const ContextsProviders = (props: ContextsProvidersProps) => {
   //Theme
   const currentTheme: 'light' | 'dark' =
     (localStorage.getItem(localStorageThemeItem) as 'light' | 'dark') ||
-    'light';
+    'dark';
   const [themeMode, setThemeMode] = React.useState(currentTheme);
   const setTheme = (theme: 'light' | 'dark') => {
     localStorage.setItem(localStorageThemeItem, theme);

@@ -8,8 +8,11 @@ import {
   ContentType,
   ExperienceItem,
 } from '../../components/ExperienceContent/ExperienceContent.models';
+
 import { InfoCard } from '../../components/InfoCard/InfoCard';
 import { LanguageCard } from '../../components/LanguageCard/LanguageCard';
+import { InterestCard } from '../../components/InterestCard/InterestCard';
+import { ReadingCard } from '../../components/ReadingCard/ReadingCard';
 import { LinkCard } from '../../components/LinkCard/LinkCard';
 import { ProjectContent } from '../../components/ProjectContent/ProjectContent';
 import { ProjectItem } from '../../components/ProjectContent/ProjectContent.models';
@@ -27,7 +30,6 @@ import {
   sxPageContainer,
   sxPageContainerLarge,
 } from './App.styles';
-import { InterestCard } from '../../components/InterestCard/InterestCard';
 
 function App() {
   const { isSmall, isMedium, isLarge } = useThemeMediaQuery();
@@ -37,16 +39,78 @@ function App() {
   const { ref: aboutRef, refIsVisible: aboutIsVisible } = useVisibility();
   const { ref: experienceRef, refIsVisible: experienceIsVisible } =
     useVisibility();
+  const { ref: educationRef, refIsVisible: educationIsVisible } =
+  useVisibility();
   const { ref: skillRef, refIsVisible: skillIsVisible } = useVisibility();
   const { ref: projectRef, refIsVisible: projectIsVisible } = useVisibility();
   const { ref: contactRef, refIsVisible: contactIsVisible } = useVisibility();
   const { ref: infoRef, refIsVisible: infoIsVisible } = useVisibility();
   const { ref: languageRef, refIsVisible: languageIsVisible } = useVisibility();
   const { ref: interestRef, refIsVisible: interestIsVisible } = useVisibility();
+  const { ref: readingRef, refIsVisible: readingIsVisible } = useVisibility();
 
   useEffect(() => {
     containerRef.current?.focus();
   }, []);
+
+  const educations: ExperienceItem[] = [
+    {
+      title: 'education-1-title',
+      subTitle: 'education-1-subTitle',
+      info: 'education-1-info',
+      content: [
+        { type: ContentType.TEXT, content: 'education-1-content-1' },
+      ],
+    },
+    {
+      title: 'education-2-title',
+      subTitle: 'education-2-subTitle',
+      info: 'education-2-info',
+      content: [
+        { type: ContentType.TEXT, content: 'education-2-content-1' },
+      ],
+    },
+    {
+      title: 'education-3-title',
+      subTitle: 'education-3-subTitle',
+      info: 'education-3-info',
+      content: [
+        { type: ContentType.TEXT, content: 'education-3-content-1' },
+      ],
+    },
+    {
+      title: 'education-4-title',
+      subTitle: 'education-4-subTitle',
+      info: 'education-4-info',
+      content: [
+        { type: ContentType.TEXT, content: 'education-4-content-1' },
+      ],
+    },
+    {
+      title: 'education-5-title',
+      subTitle: 'education-5-subTitle',
+      info: 'education-5-info',
+      content: [
+        { type: ContentType.TEXT, content: 'education-5-content-1' },
+      ],
+    },
+    {
+      title: 'education-6-title',
+      subTitle: 'education-6-subTitle',
+      info: 'education-6-info',
+      content: [
+        { type: ContentType.TEXT, content: 'education-6-content-1' },
+      ],
+    },
+    {
+      title: 'education-7-title',
+      subTitle: 'education-7-subTitle',
+      info: 'education-7-info',
+      content: [
+        { type: ContentType.TEXT, content: 'education-7-content-1' },
+      ],
+    },
+  ];
 
   const experiences: ExperienceItem[] = [
     {
@@ -55,15 +119,13 @@ function App() {
       info: 'experience-1-info',
       content: [
         { type: ContentType.TEXT, content: 'experience-1-content-1' },
-        {
+        /*{
           type: ContentType.LIST,
           content: [
             'experience-1-content-2',
-            'experience-1-content-3',
-            'experience-1-content-4',
           ],
         },
-        { type: ContentType.TEXT, content: 'experience-1-content-5' },
+      { type: ContentType.TEXT, content: 'experience-1-content-5' },*/
       ],
     },
     {
@@ -72,11 +134,11 @@ function App() {
       info: 'experience-2-info',
       content: [
         { type: ContentType.TEXT, content: 'experience-2-content-1' },
-        {
+        /*{
           type: ContentType.LIST,
           content: ['experience-2-content-2', 'experience-2-content-3'],
         },
-        { type: ContentType.TEXT, content: 'experience-2-content-4' },
+      { type: ContentType.TEXT, content: 'experience-2-content-4' },*/
       ],
     },
     {
@@ -85,14 +147,31 @@ function App() {
       info: 'experience-3-info',
       content: [
         { type: ContentType.TEXT, content: 'experience-3-content-1' },
-        {
+        /*{
           type: ContentType.LIST,
           content: ['experience-3-content-2', 'experience-3-content-3'],
         },
         {
           type: ContentType.TEXT,
           content: 'experience-3-content-4',
+        },*/
+      ],
+    },
+
+    {
+      title: 'experience-4-title',
+      subTitle: 'experience-4-subTitle',
+      info: 'experience-4-info',
+      content: [
+        { type: ContentType.TEXT, content: 'experience-4-content-1' },
+        /*{
+          type: ContentType.LIST,
+          content: ['experience-3-content-2', 'experience-3-content-3'],
         },
+        {
+          type: ContentType.TEXT,
+          content: 'experience-3-content-4',
+        },*/
       ],
     },
   ];
@@ -153,8 +232,6 @@ function App() {
       info: 'project-1-info',
       content: [
         { type: ContentType.TEXT, content: 'project-1-content-1' },
-        { type: ContentType.TEXT, content: 'project-1-content-2' },
-        { type: ContentType.TEXT, content: 'project-1-content-3' },
       ],
     },
     {
@@ -162,17 +239,6 @@ function App() {
       info: 'project-2-info',
       content: [
         { type: ContentType.TEXT, content: 'project-2-content-1' },
-        { type: ContentType.TEXT, content: 'project-2-content-2' },
-        { type: ContentType.TEXT, content: 'project-2-content-3' },
-      ],
-    },
-    {
-      title: 'project-3-title',
-      info: 'project-3-info',
-      content: [
-        { type: ContentType.TEXT, content: 'project-3-content-1' },
-        { type: ContentType.TEXT, content: 'project-3-content-2' },
-        { type: ContentType.TEXT, content: 'project-3-content-3' },
       ],
     },
   ];
@@ -211,6 +277,25 @@ function App() {
             }
           >
             <Box sx={sxAppContentLeftContainer}>
+              <section
+                ref={educationRef}
+                style={{
+                  transition: 'opacity 0.3s ease-in-out 0.2s',
+                  opacity: educationIsVisible ? 1 : 0,
+                }}
+              >
+                <CustomCard
+                  id={'education'}
+                  title={<DynamicText textId={'education'} />}
+                  content={<ExperienceContent experiences={educations} />}
+                  index={1}
+                  containerRef={containerRef}
+                  scrolledSectionsState={[
+                    scrolledSections,
+                    setScrolledSections,
+                  ]}
+                />
+              </section>
               <section
                 ref={experienceRef}
                 style={{
@@ -298,6 +383,16 @@ function App() {
                 }}
               >
                 <InterestCard />
+              </section>
+
+              <section
+                ref={readingRef}
+                style={{
+                  transition: 'opacity 0.3s ease-in-out 0.2s',
+                  opacity: readingIsVisible ? 1 : 0,
+                }}
+              >
+                <ReadingCard />
               </section>
 
 
