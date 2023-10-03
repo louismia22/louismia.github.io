@@ -81,7 +81,7 @@ export const ContextsProviders = (props: ContextsProvidersProps) => {
   //Language
   const currentLanguage: 'french' | 'english' =
     (localStorage.getItem(localStorageLanguageItem) as 'french' | 'english') ||
-    'french';
+    'english';
   const [languageMode, setLanguageMode] = React.useState(currentLanguage);
   const setLanguage = (language: 'french' | 'english') => {
     localStorage.setItem(localStorageLanguageItem, language);
